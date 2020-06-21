@@ -13,9 +13,10 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-
+\usepackage[english]{babel}
+\usepackage{tabularx}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -51,9 +52,15 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -100,10 +107,20 @@
       {Software Engineer}{Oct 2016 - Present}
       \resumeItemListStart
         \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
+          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
         \resumeItem{Apache Beam}
           {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
       \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
 
     \resumeSubheading
       {Coursera}{Mountain View, CA}
@@ -116,13 +133,13 @@
         \resumeItem{Workflows}
           {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
         \resumeItem{Data Collection}
-          {Designed the internal survey and crowd sourcing platfowm which allowed for creating various tasks for crowd sourding or embedding surveys across the Coursera platform.}
+          {Designed the internal survey and crowd sourcing platform which allowed for creating various tasks for crowd sourcing or embedding surveys across the Coursera platform.}
         \resumeItem{Dev Environment}
           {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
         \resumeItem{Data Warehousing}
           {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
         \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
+          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
         \resumeItem{Content Discovery}
           {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
         \resumeItem{Course Dashboards}

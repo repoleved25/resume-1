@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : Abhishek Mahurkar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\hypersetup{
+	colorlinks=false,
+	pdfborder={0 0 0}
+}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNew}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeItemLevelTwo}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingSameCompany}[2]{
+	%\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		%\textbf{#1} & #2 \\
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemiii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStartLevelTwo}{\begin{itemize}}
+\newcommand{\resumeItemListEndLevelTwo}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Abhishek Mahurkar} & Email : \href{mailto:amabhishek25@gmail.com}{amabhishek25@gmail.com}\\
+  \href{https://www.linkedin.com/in/networkam007}{www.linkedin.com/in/networkam007} & Mobile : +91-9975039387 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Visvesvaraya National Institute of Technology}{Nagpur, India}
+      {Bachelor of Technology in Computer Science \& Engineering;  CGPA: 7.06/10.0}{July 2011 -- May 2015}
+    \resumeSubheading
+      {Somalwar Junior College Ramdaspeth}{Nagpur, India}
+      {Higher Secondary School Certificate;  Percentage: 90.17\% }{ 2011}
+	\resumeSubheading
+	  {St. Francis De'Sales High School}{Nagpur, India}
+	  {Secondary School Certificate;  Percentage: 91.23\% }{ 2009}
+  \resumeSubHeadingListEnd
+  
+  
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\item{
+ 	\textbf{Languages}{: Java, C/C++, Javascript, HTML/CSS}
+}
+\hfill
+\item {
+ 	\textbf{Frameworks}{: Spring MVC, Spring Boot}
+}
+\hfill
+\item {
+ 	\textbf{Databases/Technology}{: Cassandra, Aerospike, ElasticSearch, MongoDB, MySQL, Kafka}
+}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Snapdeal}{Bengaluru, India}
+      {Senior Software Engineer}{April 2019 - Present}
+      
+      \resumeItemListStart
+        \resumeItem{Distributed State Machine}
+          {System which act as an orchestrator for order state transitions between other systems. Reduced Seller Payments Settlement time by migrating existing Seller Payments process to DSM}
+        \resumeItem{IVRS}
+          {System for IVR communication. Integrated with Vendor, refactored code for providing option to select vendor for IVR templates}
+        \resumeItemNew
+        {Added support for experiments to capture data for improving company metrics and worked on other backend tasks}
+      \resumeItemListEnd
+      
+     \resumeSubheadingSameCompany
+     {Software Engineer II}{April 2017 - March 2019}
+     
+     \resumeItemListStart
+     \resumeItem{Reviews and Rating}
+     {Added Review Tags Functionality which enabled user to add tags a review, also added support for A/B testing to API's } 
+     \resumeItem{NPS}
+     {System for capturing NPS score by sending email, notifications. Involved in features additions which enabled capturing more data and changes to reduce reporting issues}
+     \resumeItemNew
+     {Worked on backend tasks which improved syetem stability and Migrated Systems from Public cloud to Company's Private cloud}
+     \resumeItemListEnd 
+      
+     \resumeSubheadingSameCompany
+     {Software Engineer I (User Generated Content Team)}{July 2015 - March 2017}
+	 
+	 \resumeItemListStart
+	 \resumeItem{Reviews and Rating}
+	 {System for powering Product R\&R, Image Reviews, Reviews Moderation Panel, Data Syncing/Cleaning Utilities}
+ 		\resumeItemListStartLevelTwo
+ 		\resumeItemLevelTwo
+ 		{Developed Framework for removing non Buyer reviews,fraud ratings to increase the trust of R\&R content}
+ 			\resumeItemLevelTwo
+ 		{Involved in implementing image review,attribute level rating features backend and also on Android app}
+ 		\resumeItemListEndLevelTwo
+ 	
+	\resumeItem{Question and Answer}
+	{System for powering Product Q\&A, Q\&A Moderation Panel, Moderation Framework }
+		\resumeItemListStartLevelTwo
+		\resumeItemLevelTwo
+		{Implemented new features on Moderation Panel which improved productivity of Moderators}
+		\resumeItemLevelTwo
+		{Developed Framework for moderating content based on keywords which helped in automating moderation of some content}
+		\resumeItemListEndLevelTwo
+	\resumeItemNew
+	{Worked extensively on backend tasks such as developing and optimising
+		REST API's, Bug fixing}
+	\resumeItemNew
+	{Improved caching strategy to reduce memory usage, developed cache warm-up utility}	
+	
+	\resumeItemListEnd
+   
+
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Trip Advisor Application}
+      {Designed and Developed Trip Advisor application to help users plan their trip on visit to new city with auto-generated packages. Implemented the user application for Android smartphones and the backend was deployed on AWS Cloud Platform.}
+    \resumeSubItem{Employee Database System}
+      {Created an employee database application which provided various operations such as CRUD
+using B-Tree as database. This project was implemented in C}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

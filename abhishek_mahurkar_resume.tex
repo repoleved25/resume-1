@@ -130,7 +130,7 @@
 }
 \hfill
 \item {
- 	\textbf{Frameworks}{: Spring MVC, Spring Boot}
+ 	\textbf{Frameworks}{: Spring MVC, Spring Boot, Vert.x}
 }
 \hfill
 \item {
@@ -142,18 +142,60 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  
+	  \resumeSubheading
+	  {MakeMyTrip}{Bengaluru, India}
+	  {Lead Software Engineer  (Platform Growth Team)}{January 2023 - Present}
+	  
+	  \resumeItemListStart
+	  \resumeItem{Apollo}
+	  {Backend System for powering Bot Framework UI of MMT }
+	  \resumeItemListStartLevelTwo
+	  \resumeItemLevelTwo
+	  {Designed and developed the service having User-LLM Bot Chat over HTTP SSE}
+	   \resumeItemLevelTwo
+	  {Persistence Layer for chats history and Intergration with the MMT LLM Intelligence System and also acting as UI backend}
+	  \resumeItemListEndLevelTwo
+	  \resumeItem{Agora}
+	  {Generic System for Activity Feed Functionality}
+	   \resumeItemListStartLevelTwo
+	  \resumeItemLevelTwo
+	  {Led the Design \& Development of Service and Onboarded goContacts program}
+	  	  \resumeItemListEndLevelTwo
+	  	  
+  	  	\resumeItemNew
+	  {Architecting Services, Mentoring Juniors and Reviewing Designs \& Code}	
+	  \resumeItemListEnd
+  
+	  \resumeSubheading
+	  {MakeMyTrip}{Bengaluru, India}
+	  {Senior Software Engineer II (Platform Loyalty Team)}{March 2021 - January 2023}
+	  
+ 		\resumeItemListStart
+			 \resumeItem{Loyalty System}
+			 {System for powering Loyalty Programs of Goibibo (goTribe) and MakeMyTrip (MMTBLACK) }
+			\resumeItemListStartLevelTwo
+				\resumeItemLevelTwo
+				{Designed and developed features like membership extension, oneclick enrolment, extending functionalities to B2B customers (MyPartner Loyalty Program)}
+				\resumeItemLevelTwo
+				{Migrated from existing drools rule engine to in-house rule engine, Enabled Vertx Hazelcast Clustering on ECS}
+			\resumeItemListEndLevelTwo
+			\resumeItemNew{Improved System stability and worked on other backend tasks}
+	  	\resumeItemListEnd
 
     \resumeSubheading
       {Snapdeal}{Bengaluru, India}
-      {Senior Software Engineer}{April 2019 - Present}
+      {Senior Software Engineer}{April 2019 - Mar 2021}
       
       \resumeItemListStart
         \resumeItem{Distributed State Machine}
-          {System which act as an orchestrator for order state transitions between other systems. Reduced Seller Payments Settlement time by migrating existing Seller Payments process to DSM}
+          {System which acts as an orchestrator for order state transitions across other systems. Reduced Seller Payments Settlement time by migrating existing Seller Payments process to DSM}
         \resumeItem{IVRS}
-          {System for IVR communication. Integrated with new Vendor, refactored code for providing option to select vendor for IVR templates}
+          {System for IVR communication. Integrated with new Vendor, Refactored Code for providing option to select vendor for IVR templates}
+       \resumeItem{Vernac Service}
+      {Designed and Developed Snapdeal Vernac System which gives translations for the product data}
         \resumeItemNew
-        {Added support for experiments to capture data for improving company metrics and worked on other backend tasks}
+        {Added support for experiments to capture data for improving company metrics and part of Seller Team for short time worked on backend tasks to improve functionalities of Seller panel}
       \resumeItemListEnd
       
      \resumeSubheadingSameCompany
@@ -161,7 +203,7 @@
      
      \resumeItemListStart
      \resumeItem{Reviews and Rating}
-     {Added Review Tags Functionality which enabled user to add tags a review, also added support for A/B testing to API's } 
+     {Added Review Tags Functionality, also added support for A/B testing to API's } 
      \resumeItem{NPS}
      {System for capturing NPS score by sending email, notifications. Involved in feature additions which enabled capturing more data and worked on changes to reduce reporting issues}
      \resumeItemNew
@@ -200,6 +242,8 @@
 
   \resumeSubHeadingListEnd
   
+  
+%\iffalse
 
 %-----------PROJECTS-----------------
 \section{Academic Projects}
@@ -210,6 +254,8 @@
       {Created an employee database application which provided various operations such as CRUD
 using B-Tree as database. This project was implemented in C}
   \resumeSubHeadingListEnd
+  
+%\fi
 
 %-------------------------------------------
 \end{document}
